@@ -56,7 +56,7 @@ A secured REST API that:
 
 1. Clone the repository
 
-git clone https://github.com/PrashikSawant/day18-jwt-auth.git
+- git clone https://github.com/PrashikSawant/day18-jwt-auth.git
 
 cd day18-jwt-auth
 
