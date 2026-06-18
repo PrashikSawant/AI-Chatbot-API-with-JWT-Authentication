@@ -59,15 +59,60 @@ A secured REST API that:
 - cd day18-jwt-auth
 
 2. Install dependencies
-
 - pip install -r requirements.txt
 
 3. Create a `.env` file
-
 - GROQ_API_KEY=your_groq_api_key_here
 - SECRET_KEY=your_random_secret_key_here
 
 4. Run the server
-
 - uvicorn main:app --reload
 
+5. Open the interactive docs
+- http://localhost:8000/docs
+
+---
+
+## 🔌 API Endpoints
+
+| Method | Endpoint | Auth Required | Purpose |
+|---|---|---|---|
+| GET | `/` | No | Confirms API is running |
+| POST | `/register` | No | Create a new account |
+| POST | `/login` | No | Get a JWT token |
+| POST | `/chat` | ✅ Yes | Send message, get AI reply |
+| GET | `/history` | ✅ Yes | View your conversation history |
+| DELETE | `/history` | ✅ Yes | Clear your conversation history |
+| GET | `/me` | ✅ Yes | View your username |
+
+---
+
+## 📚 What I Learned
+
+- The difference between authentication and authorization
+- How JWT tokens work (header, payload, signature)
+- Why passwords must be hashed, never stored as plain text
+- How FastAPI's `Depends()` system protects routes
+- How OAuth2PasswordBearer integrates with Swagger docs
+- How to give each user their own isolated data
+
+---
+
+## 🗺️ What's Next
+
+- 🔜 Connect a Frontend to this Backend (Day 19)
+- 🔜 Rate Limiting + Usage Tracking (Day 20)
+- 🔜 Deploy Full Stack App (Day 21)
+
+---
+
+## 👨‍💻 About Me
+
+I am Prashik — an aspiring AI Engineer on a 4-month intensive
+journey to become job-ready in Generative AI Engineering.
+
+Follow my journey on [LinkedIn](https://www.linkedin.com/in/prashik-sawant-ds/)
+
+---
+
+*Started: June 18, 2026 | Status: ✅ Complete*
