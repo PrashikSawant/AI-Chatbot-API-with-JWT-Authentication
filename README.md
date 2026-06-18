@@ -55,9 +55,7 @@ A secured REST API that:
 ## 🚀 How to Run Locally
 
 1. Clone the repository
-
 - git clone https://github.com/PrashikSawant/day18-jwt-auth.git
-
 - cd day18-jwt-auth
 
 2. Install dependencies
