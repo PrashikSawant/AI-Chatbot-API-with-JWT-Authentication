@@ -58,18 +58,18 @@ A secured REST API that:
 
 - git clone https://github.com/PrashikSawant/day18-jwt-auth.git
 
-cd day18-jwt-auth
+- cd day18-jwt-auth
 
 2. Install dependencies
 
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 3. Create a `.env` file
 
-GROQ_API_KEY=your_groq_api_key_here
+- GROQ_API_KEY=your_groq_api_key_here
+- SECRET_KEY=your_random_secret_key_here
 
-SECRET_KEY=your_random_secret_key_here
 4. Run the server
 
-uvicorn main:app --reload
+- uvicorn main:app --reload
 
